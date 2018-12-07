@@ -151,6 +151,11 @@ class App extends Component {
                 </form>
               </Grid>
               <Grid item xs={12}>
+                {items.length === 0 && (
+                <Typography align="center" variant="caption">
+                      Add some thing to the list.
+                </Typography>
+                )}
                 {this.renderItems(false)}
                 {doneItems.length > 0 && (
                   <React.Fragment>
